@@ -12,3 +12,9 @@ user_job = user_job.strip().title() # Remove any leading or trailing whitespace 
 print (f"Wow! {user_job} is a great job!")
 print (f"UPPERCASE Name: {user_name.upper()} ")
 print (f"UPPERCASE Job: {user_job.upper()} ")
+
+def hello(to = "World"): # Here world is the default function parameter, if we do not pass any value to the function it will use the default value "World"
+    print (f"Hello {to}!")
+name = input("What is your name? ").strip().title()
+hello() # This will print "Hello World!" because the default value of the parameter 'to' is "World"
+hello(name) # This will print "Hello {name}!" because we are passing the value of the 'name' variable
