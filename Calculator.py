@@ -1,4 +1,4 @@
-x = float(input("Enter a number: "))
+x = float(input("Enter a number: "))#better take input as float rather than integer 
 y = float(input("Enter another number: "))
 z = x + y
 a = x - y
