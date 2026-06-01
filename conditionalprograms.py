@@ -21,3 +21,14 @@ def is_even(num):
     return True if num % 2 == 0 else False # This will return True if the number is even and False if the number is odd
 
 main()
+
+
+x = input("What is your name? ").capitalize().strip().title() # This will take the input from the user, remove any leading or trailing whitespace, and convert it to title case (first letter of each word capitalized)
+print(f"Hello {x}!")
+match x:
+    case "Harry" | "Hermione" | "Ron":
+        print ("Your House is Gryffindor!")
+    case "Draco":
+        print ("Your House is Slytherin!")  
+    case _:
+        print ("I don't know which house you belong to.")
